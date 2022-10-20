@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>20_10</title>
+  </head>
+  <body>
+    <div class="root">
+      <button class="main-button">Ấn vào đây đi bà!!</button>
+      <audio class="audio hide" src="./music.mp3"></audio>
+      <div class="main hide">
+        <img class="main-img" src="./heart.jpg" alt="" />
+        <div class="main-content">
+          <img
+            src="./z3815910852001_c793f1733685e7024498fccdd7580b90.jpg"
+            class="avatar"
+          />
+          <div class="content">
+            <p>20/10 Thật hạnh phúc</p>
+            <p>Cười tươi nhé!!!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const mainButton = document.querySelector(".main-button");
+      const main = document.querySelector(".main");
+      const audio = document.querySelector(".audio");
+      mainButton.addEventListener("click", function () {
+        mainButton.classList.add("open-button");
+        main.classList.remove("hide");
+        audio.play();
+      });
+    </script>
+  </body>
+</html>
